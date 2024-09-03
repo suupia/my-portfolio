@@ -22,7 +22,6 @@
             <p>ゲームを輝かせる笑顔のプログラマー</p>
             <p>音楽制作も好き</p>
         </section>
-
         <section id="project">
             <h2>Projects</h2>
             <h3>自主制作</h3>
@@ -36,31 +35,30 @@
                 <p>内容: 2Dローグライクダンジョン</p>
                 <p>役割: 企画、プログラム、サウンド、イラスト</p>
                 <p>WebGL: <a href="https://suupia.github.io/MysteryDungeonWebGL/" target="_blank">https://suupia.github.io/MysteryDungeonWebGL/</a></p>
-                <button class="open-modal-btn" onclick="openModal()">詳細を表示</button>
+                <button class="open-modal-btn" onclick="openModal('modal1')">詳細を表示</button>
             </div>
-        </section>
-
-        <!-- モーダル -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <div class="slider">
-                    <img src="images/MysteriousDungeon_Screenshot_1.png" class="slide active" alt="スクリーンショット1">
-                    <img src="images/MysteriousDungeon_Screenshot_2.png" class="slide" alt="スクリーンショット2">
-                    <img src="images/MysteriousDungeon_Screenshot_3.png" class="slide" alt="スクリーンショット3">
-                </div>
-                <div class="slider-controls">
-                    <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
-                    <button class="next-btn" onclick="nextSlide()">&#10095;</button>
-                </div>
-                <div class="modal-description">
-                    <h3>ゲームの詳細</h3>
-                    <p>このゲームは私が初めて作成したゲームです。プログラミング経験は1か月ほどですが、その時点でできることを精一杯詰め込んで作成しました。ターン制の戦闘システムやアイテム収集、ステージ探索を通じて、ダンジョン探索を楽しめます。ボスフロアも存在するので、どこまで進めるのか挑戦してみてください！</p>
-                    <h4>こだわった点</h4>
-                    <p>マップチップや、SE、BGMなどを自作し、プレイヤーが没入感を持てるようにやさしい世界観を作成しました。また、ステージ生成アルゴリズムにもこだわり、毎回異なるダンジョンを楽しむことができます。</p>
+        
+            <!-- Mystery Dungeon モーダル -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+                    <div class="slider">
+                        <img src="images/MysteriousDungeon_Screenshot_1.png" class="slide active" alt="スクリーンショット1">
+                        <img src="images/MysteriousDungeon_Screenshot_2.png" class="slide" alt="スクリーンショット2">
+                        <img src="images/MysteriousDungeon_Screenshot_3.png" class="slide" alt="スクリーンショット3">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal1')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal1')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>このゲームは私が初めて作成したゲームです。プログラミング経験は1か月ほどですが、その時点でできることを精一杯詰め込んで作成しました。ターン制の戦闘システムやアイテム収集、ステージ探索を通じて、ダンジョン探索を楽しめます。ボスフロアも存在するので、どこまで進めるのか挑戦してみてください！</p>
+                        <h4>こだわった点</h4>
+                        <p>マップチップや、SE、BGMなどを自作し、プレイヤーが没入感を持てるようにやさしい世界観を作成しました。また、ステージ生成アルゴリズムにもこだわり、毎回異なるダンジョンを楽しむことができます。</p>
+                    </div>
                 </div>
             </div>
-        </div>
         
             <div class="project">
                 <h4>だっかん！モンスターの島（2人開発）</h4>
@@ -73,7 +71,32 @@
                 <div class="steamStore u-clearfix u-custom-html u-custom-html-2">
                     <iframe src="https://store.steampowered.com/widget/2147230/_/" frameborder="0" width="100%" height="190"></iframe>
                 </div>
+                <button class="open-modal-btn" onclick="openModal('modal2')">詳細を表示</button>
             </div>
+        
+            <!-- だっかん！モンスターの島 モーダル -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+                    <div class="slider">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_1.png" class="slide active" alt="OperationMonsterRetrieval_Screenshot_1">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_2.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_2">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_3.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_3">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_4.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_4">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal2')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal2')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「だっかん！モンスターの島」は、ターン制の戦略ゲームで、プレイヤーはモンスターの島を舞台に戦術を駆使して攻略を目指します。スピーディなバトルと奥深い戦略性を特徴とし、様々なモンスターを使いこなす楽しさがあります。</p>
+                        <h4>こだわった点</h4>
+                        <p>モンスターのデザインやサウンドは、ゲームの雰囲気を高めるために細部までこだわりました。また、ゲームの難易度調整に力を入れ、初心者から上級者まで楽しめるバランスを実現しました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         
 
             <div class="project">
