@@ -205,6 +205,29 @@
                 <p>使用技術: C++, Siv3D</p>
                 <p>内容: 2Dノベルゲーム</p>
                 <p>役割: 企画、プログラム、サウンド</p>
+                <button class="open-modal-btn" onclick="openModal('modal-photo-studio')">詳細を表示</button>
+            </div>
+
+            <!-- 写真館<<黄泉の前>> モーダル -->
+            <div id="modal-photo-studio" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-photo-studio')">&times;</span>
+                    <div class="slider">
+                        <img src="images/PhotoStudio_Screenshot_1.png" class="slide active" alt="PhotoStudio_Screenshot_1">
+                        <img src="images/PhotoStudio_Screenshot_2.png" class="slide" alt="PhotoStudio_Screenshot_2">
+                        <img src="images/PhotoStudio_Screenshot_3.png" class="slide" alt="PhotoStudio_Screenshot_3">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal-photo-studio')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-photo-studio')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「写真館<<黄泉の前>>」は、写真館を舞台にしたノベルゲームです。プレイヤーは、写真館の店員となり、訪れる客の写真を撮影していきます。写真を撮影することで、客の思い出を取り戻すことができます。</p>
+                        <h4>こだわった点</h4>
+                        <p>ゲーム内のキャラクターや背景、BGMなどを丁寧に作成し、プレイヤーがゲームの世界に没入できるようにしました。また、写真撮影システムにもこだわり、プレイヤーが写真を撮影する楽しさを追求しました。</p>
+                    </div>
+                </div>
             </div>
         
             <div class="project">
