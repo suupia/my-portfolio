@@ -64,7 +64,7 @@
                 <h4>だっかん！モンスターの島（2人開発）</h4>
                 <img src="images/OperationMonsterRetrieval_Title.png" alt="OperationMonsterRetrieval_Title" class="thumbnail-img">
                 <p>期間: 2021年7月〜12月（5ヶ月）</p>
-                <p>制作目的: 自身の創作意欲を確認し、Steamで販売する</p>
+                <p>制作目的: 自身の作りたいゲームを作りきり、Steamで販売する</p>
                 <p>使用技術: Unity</p>
                 <p>内容: 2Dタワーディフェンス</p>
                 <p>役割: 企画、プログラム、サウンド、イラスト</p>
@@ -106,6 +106,29 @@
                 <p>使用技術: Unity</p>
                 <p>内容: 2D横スクロール&ノベル</p>
                 <p>役割: 企画、プログラム、サウンド、イラスト</p>
+                <button class="open-modal-btn" onclick="openModal('modal-ever-ever-green')">詳細を表示</button>
+            </div>
+
+            <!-- EverEverGreen モーダル -->
+            <div id="modal-ever-ever-green" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-ever-ever-green')">&times;</span>
+                    <div class="slider">
+                        <img src="images/EverEverGreen_Screenshot_1.png" class="slide active" alt="EverEverGreen_Screenshot_1">
+                        <img src="images/EverEverGreen_Screenshot_2.png" class="slide" alt="EverEverGreen_Screenshot_2">
+                        <img src="images/EverEverGreen_Screenshot_3.png" class="slide" alt="EverEverGreen_Screenshot_3">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal-ever-ever-green')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-ever-ever-green')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「EverEverGreen」は、2D横スクロールアクションとノベルを組み合わせたゲームです。プレイヤーは、主人公の少女「エヴァ」を操作して、不思議な世界を冒険します。アクションパートでは、エヴァが持つ「エネルギー」を使って敵を倒し、ノベルパートでは、物語を進めながら謎を解いていきます。</p>
+                        <h4>こだわった点</h4>
+                        <p>ゲーム内のキャラクターや背景、BGMなどを丁寧に作成し、プレイヤーがゲームの世界に没入できるようにしました。また、アクションパートとノベルパートのバランスを調整し、プレイヤーが物 語を楽しみながらアクションを楽しめるようにしました。</p>
+                    </div>
+                </div>
             </div>
         
             <div class="project">
@@ -191,12 +214,25 @@
                 <p>使用技術: Unity, PhotonFusion</p>
                 <p>内容: 3Dオンライン協力アクションパズル</p>
                 <p>役割: リーダー、企画、プログラム</p>
-                <p>GitHub:</p>
-                <a href="https://github.com/suupia/CarryBlock" target="_blank">
-                    <img src="https://opengraph.githubassets.com/22ccf0fc48404367dc37d769eb2a3d386ef7f4e62de5509889c1b42e0b1a3430/suupia/CarryBlock" alt="CarryBlock" style="max-width: 500px; width: 100%;">
-                </a>
+                <p>GitHub:
+                    <a href="https://github.com/suupia/CarryBlock" target="_blank">
+                        <img src="https://opengraph.githubassets.com/22ccf0fc48404367dc37d769eb2a3d386ef7f4e62de5509889c1b42e0b1a3430/suupia/CarryBlock" alt="CarryBlock" style="max-width: 500px; width: 100%;">
+                    </a>
+                </p>
+                <button class="open-modal-btn" onclick="openModal('modal-carry-block')">詳細を表示</button>
             </div>
-        
+
+            <!-- Carry Block! モーダル -->
+            <div id="modal-carry-block" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-carry-block')">&times;</span>
+                    <div class="slider">
+                        <img src="images/CarryBlock_Screenshot_1.png" class="slide active" alt="CarryBlock_Screenshot_1">
+                        <img src="images/CarryBlock_Screenshot_2.png" class="slide" alt = "CarryBlock_Screenshot_2">
+                    </div>
+                </div> 
+            </div> 
+
             <div class="project">
                 <h4>BANgBANgStreaming（9人開発）BitSummit</h4>
                 <img src="images/BANgBANgStreaming_Title.png" alt="BANgBANgStreaming_Title" class="thumbnail-img">
