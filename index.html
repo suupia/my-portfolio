@@ -143,11 +143,36 @@
         
             <div class="project">
                 <h4>猫は液体（4人開発、BitSummit）</h4>
+                <img src="images/CatsAreLiquid_Title.png" alt="CatsAreLiquid_Title" class="thumbnail-img">
                 <p>期間: 2023年7月（2週間）</p>
                 <p>制作目的: チーム開発のスキルを向上させる</p>
                 <p>使用技術: Unity</p>
                 <p>内容: 2Dアクションパズル（イライラ棒のようなゲーム）</p>
                 <p>役割: リーダー、企画、プログラム、サウンド</p>
+                <p>itch.io: <a href="https://bitsummit-gamejam.itch.io/nekohaekitai" target="_blank">https://bitsummit-gamejam.itch.io/nekohaekitai</a></p>
+                <button class="open-modal-btn" onclick="openModal('modal-cats-are-liquid')">詳細を表示</button>
+            </div>
+
+            <!-- 猫は液体 モーダル -->
+            <div id="modal-cats-are-liquid" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-cats-are-liquid')">&times;</span>
+                    <div class="slider">
+                        <img src="images/CatsAreLiquid_Screenshot_1.png" class="slide active" alt="CatsAreLiquid_Screenshot_1">
+                        <img src="images/CatsAreLiquid_Screenshot_2.png" class="slide" alt="CatsAreLiquid_Screenshot_2">
+                        <img src="images/CatsAreLiquid_Screenshot_3.png" class="slide" alt="CatsAreLiquid_Screenshot_3">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal-cats-are-liquid')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-cats-are-liquid')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「猫は液体」は、猫が液体であることをテーマにしたアクションパズルゲームです。プレイヤーは猫を操作して、さまざまな障害物を乗り越えながらゴールを目指します。猫の特性を活かして、ステージをクリアしていきましょう。</p>
+                        <h4>こだわった点</h4>
+                        <p>猫のアニメーションやSE、BGMにこだわり、猫が液体であるという世界観を表現しました。また、ステージデザインにも力を入れ、プレイヤーが猫の特性を活かしてステージを攻略する楽しさを追求しました。</p>
+                    </div>
+                </div>
             </div>
         
             <div class="project">
