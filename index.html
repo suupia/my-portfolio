@@ -10,59 +10,206 @@
 
 <body>
     <header>
-        <h1>Suupia's Portfolio</h1>
+        <h1>すーぴあ の ポートフォリオ / Suupia's Portfolio</h1>
     </header>
+
 
     <main>
         <section id="profile">
             <h2>About me</h2>
+            <img src="images/20240127_Suupia.png" alt="Suupia's Icon" style="width: 100px; height: 100px;">
             <p>すーぴあ / Suupia</p>
-            <p>笑顔のプログラマー</p>
+            <p>ゲームを輝かせる笑顔のプログラマー</p>
+            <p>音楽制作も好き</p>
         </section>
+
         <section id="project">
             <h2>Projects</h2>
             <h3>自主制作</h3>
+        
             <div class="project">
-                <h3>Mystery Dungeon（個人開発）</h3>
-                <p>期間：2021年5月〜7月（2ヶ月）</p>
+                <h4>Mystery Dungeon（個人開発）</h4>
+                <img src="images/MysteriousDungeon_Title.png" alt="MysteryDungeon Title" class="thumbnail-img">
+                <p>期間: 2021年5月〜7月（2ヶ月）</p>
+                <p>制作目的: 一人でゲーム制作を完成させる経験を積む</p>
                 <p>使用技術: Unity</p>
-                <p>内容・役割：2Dローグライクダンジョン。企画、プログラム、サウンド、イラスト</p>
-            </div>
-            <div class="project">
-                <h3>だっかん！モンスターの島（2人開発）</h3>
-                <p>期間：2021年7月〜12月（5ヶ月）</p>
-                <p>使用技術: Unity</p>
-                <p>内容・役割：2Dタワーディフェンス。企画、プログラム、サウンド、イラスト</p>
-            </div>
-            <!-- 以下、他のプロジェクトも同様に追加 -->
-        </section>
-
-        <section id="hackathons">
-            <h3>ハッカソン</h3>
-            <div class="project">
-                <h3>技育キャンプ Discordのボット（2人開発）</h3>
-                <p>期間：2024年5月（2日間）</p>
-                <p>使用技術：Python</p>
+                <p>内容: 2Dローグライクダンジョン</p>
+                <p>役割: 企画、プログラム、サウンド、イラスト</p>
+                <p>WebGL: <a href="https://suupia.github.io/MysteryDungeonWebGL/" target="_blank">https://suupia.github.io/MysteryDungeonWebGL/</a></p>
+                <button class="open-modal-btn" onclick="openModal()">詳細を表示</button>
             </div>
         </section>
 
-        <section id="internships">
-            <h3>インターン</h3>
-            <div class="project">
-                <h3>株式会社idle system</h3>
-                <p>期間：2022年7月〜現在（22ヶ月）</p>
-                <p>使用技術: Unity</p>
-                <p>内容・役割：企画、リファクタリング、追加コンテンツ作成、バグ修正、テスト</p>
+        <!-- モーダル -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div class="slider">
+                    <img src="images/screenshot1.png" class="slide active" alt="スクリーンショット1">
+                    <img src="images/screenshot2.png" class="slide" alt="スクリーンショット2">
+                    <img src="images/screenshot3.png" class="slide" alt="スクリーンショット3">
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+                    <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="modal-description">
+                    <h3>ゲームの詳細</h3>
+                    <p>このゲームは、2Dのローグライクダンジョンです。ターン制の戦闘システムやアイテム収集、ステージ探索を通じて、プレイヤーに挑戦的なゲームプレイを提供します。</p>
+                    <h4>こだわった点</h4>
+                    <p>グラフィックやサウンドデザインに力を入れ、プレイヤーが没入感を持てるように工夫しました。また、ステージ生成アルゴリズムにもこだわり、毎回異なるダンジョンを楽しむことができます。</p>
+                </div>
             </div>
+        </div>
+        
+            <div class="project">
+                <h4>だっかん！モンスターの島（2人開発）</h4>
+                <p>期間: 2021年7月〜12月（5ヶ月）</p>
+                <p>制作目的: 自身の創作意欲を確認し、Steamで販売する</p>
+                <p>使用技術: Unity</p>
+                <p>内容: 2Dタワーディフェンス</p>
+                <p>役割: 企画、プログラム、サウンド、イラスト</p>
+            </div>
+        
+            <div class="project">
+                <h4>EverEverGreen（2人開発）</h4>
+                <p>期間: 2022年8月〜11月（3ヶ月）</p>
+                <p>制作目的: プランナーとして内定をもらっている方と文化祭に向けて作成する</p>
+                <p>使用技術: Unity</p>
+                <p>内容: 2D横スクロール&ノベル</p>
+                <p>役割: 企画、プログラム、サウンド、イラスト</p>
+            </div>
+        
+            <div class="project">
+                <h4>Doubling Fruit Rain（2人開発、Unity 1 week）</h4>
+                <p>期間: 2023年6月（1週間）</p>
+                <p>制作目的: 短期間で完成度の高いゲームを制作するスキルを磨く</p>
+                <p>使用技術: Unity</p>
+                <p>内容: 企画、プログラム、サウンド</p>
+            </div>
+        
+            <div class="project">
+                <h4>猫は液体（4人開発、BitSummit）</h4>
+                <p>期間: 2023年7月（2週間）</p>
+                <p>制作目的: チーム開発のスキルを向上させる</p>
+                <p>使用技術: Unity</p>
+                <p>内容: 2Dアクションパズル（イライラ棒のようなゲーム）</p>
+                <p>役割: リーダー、企画、プログラム、サウンド</p>
+            </div>
+        
+            <div class="project">
+                <h4>写真館<<黄泉の前>>（2人開発）Siv3Dゲームジャム</h4>
+                <p>期間: 2023年10月（2週間）</p>
+                <p>制作目的: C++を用いたゲームの制作の経験を積む</p>
+                <p>使用技術: C++, Siv3D</p>
+                <p>内容: 2Dノベルゲーム</p>
+                <p>役割: 企画、プログラム、サウンド</p>
+            </div>
+        
+            <div class="project">
+                <h4>Carry Block (10人開発)</h4>
+                <p>期間: 2023年3月〜2023年11月（8ヶ月）</p>
+                <p>制作目的: 3Dオンライン協力ゲームの開発とリーダーシップ経験を積む</p>
+                <p>使用技術: Unity, PhotonFusion</p>
+                <p>内容: 3Dオンライン協力アクションパズル</p>
+                <p>役割: リーダー、企画、プログラム</p>
+            </div>
+        
+            <div class="project">
+                <h4>BANgBANgStreming（9人開発）BitSummit</h4>
+                <p>期間: 2024年4月〜7月（5ヶ月）</p>
+                <p>制作目的: 今までの経験を活かしてゲームジャムで賞を取る</p>
+                <p>使用技術: Unity, R3, VContainer</p>
+                <p>内容: アクション2Dタワーディフェンス</p>
+                <p>役割: リードプログラマー、企画、サウンド</p>
+            </div>
+        
+        </section>
+        
+        <section id="other-works">
+            <h2>Other Works</h2>
+        
+            <div class="work">
+                <h4>C++で作成したスネークゲーム</h4>
+                <p>期間: 2日間</p>
+                <p>内容: C++を使用して作成したクラシックなスネークゲーム。基本的なゲームループ、衝突判定、スコア機能などを実装。</p>
+            </div>
+        
+            <div class="work">
+                <h4>AtCoderでの取り組み</h4>
+                <p>内容: アルゴリズムとデータ構造の学習と実践のために、AtCoderで定期的にコンテストに参加しています。</p>
+                <p>リンク: <a href="https://atcoder.jp/users/suupia" target="_blank">AtCoder Profile</a></p>
+            </div>
+        
+            <div class="work">
+                <h4>Unityで開発したスプライトを自動でアニメーターにするツール</h4>
+                <p>内容: Unity上でスプライトを自動的にアニメーターに変換するツールを開発。ゲーム開発の効率を向上させるためのツールとして活用。</p>
+            </div>
+        
+        </section>
+
+        <section id="skills">
+            <h2>スキル</h2>
+        
+            <h3>プログラミング言語</h3>
+            <ul>
+                <li>C#（3年半）</li>
+                <li>C++（4ヶ月）</li>
+                <li>Java（1ヶ月）</li>
+                <li>Python（3ヶ月）</li>
+                <li>Haskell（5ヶ月）</li>
+                <li>Rust（1ヶ月）</li>
+                <li>F#（1ヶ月）</li>
+                <li>Swift（1ヶ月）</li>
+            </ul>
+        
+            <h3>ゲーム開発</h3>
+            <ul>
+                <li>Unity（3年半）</li>
+            </ul>
+        
+            <h3>音楽制作</h3>
+            <ul>
+                <li>Logic Pro X（3年半）</li>
+            </ul>
+        
+            <h3>グラフィックデザイン</h3>
+            <ul>
+                <li>Clip Studio（3年）</li>
+            </ul>
+        
+            <h3>バージョン管理</h3>
+            <ul>
+                <li>Git（3年）</li>
+            </ul>
+        
+            <h3>CI/CD</h3>
+            <ul>
+                <li>GitHub Actions（1ヶ月）</li>
+            </ul>
+        
+            <h3>シェル</h3>
+            <ul>
+                <li>zsh</li>
+                <li>PowerShell</li>
+            </ul>
+        
+            <h3>エディタ</h3>
+            <ul>
+                <li>Rider</li>
+                <li>Visual Studio Code</li>
+                <li>Visual Studio</li>
+            </ul>
         </section>
 
         <section id="links">
-            <h2>私に関するリンク</h2>
+            <h2>Links</h2>
             <ul>
-                <li><a href="https://github.com/suupia" target="_blank">GitHub</a></li>
-                <li><a href="https://qiita.com/suupia" target="_blank">Qiita</a></li>
-                <li><a href="https://zenn.dev/suupia" target="_blank">Zenn</a></li>
-                <li><a href="https://zenn.dev/suupia" target="_blank">YouTube</a></li>
+                <li>GitHub: <a href="https://github.com/suupia" target="_blank">https://github.com/suupia</a></li>
+                <li>Qiita: <a href="https://qiita.com/suupia" target="_blank">https://qiita.com/suupia</a></li>
+                <li>Zenn: <a href="https://zenn.dev/suupia" target="_blank">https://zenn.dev/suupia</a></li>
+                <li>YouTube: <a href="https://www.youtube.com/@suupia771" target="_blank">https://www.youtube.com/@suupia771</a></li>
+                <li>SoundCloud: <a href="https://soundcloud.com/suupia771" target="_blank">https://soundcloud.com/suupia771</a></li>
             </ul>
         </section>
 
@@ -82,6 +229,8 @@
     <footer>
         <p>&copy; 2024 Suupia</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
