@@ -105,5 +105,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // 各モーダルに対して初期スライドを設定
     document.querySelectorAll('.modal').forEach(modal => {
         updateModal(modal.id, slideIndex);
+
+        // モーダルの外側をクリックしたときにモーダルを閉じる
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeModal(modal.id);
+            }
+        });
     });
 });
