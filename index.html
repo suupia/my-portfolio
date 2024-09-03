@@ -194,12 +194,40 @@
             </div>
         
             <div class="project">
-                <h4>BANgBANgStreming（9人開発）BitSummit</h4>
+                <h4>BANgBANgStreaming（9人開発）BitSummit</h4>
+                <img src="images/BANgBANgStreaming_Title.png" alt="BANgBANgStreaming_Title" class="thumbnail-img">
                 <p>期間: 2024年4月〜7月（5ヶ月）</p>
                 <p>制作目的: 今までの経験を活かしてゲームジャムで賞を取る</p>
                 <p>使用技術: Unity, R3, VContainer</p>
                 <p>内容: アクション2Dタワーディフェンス</p>
                 <p>役割: リードプログラマー、企画、サウンド</p>
+                <p>itch.io: <a href="https://bitsummit-gamejam.itch.io/bangbangstreaming" target="_blank">https://bitsummit-gamejam.itch.io/bangbangstreaming</a></p>
+                <button class="open-modal-btn" onclick="openModal('modal-bangbangstreaming')">詳細を表示</button>
+            </div>
+
+            <!-- BANgBANgStreaming モーダル -->
+            <div id="modal-bangbangstreaming" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-bangbangstreaming')">&times;</span>
+                    <div class="slider">
+                        <img src="images/BANgBANgStreaming_Screenshot_1.png" class="slide active" alt="BANgBANgStreaming_Screenshot_1">
+                        <img src="images/BANgBANgStreaming_Screenshot_2.png" class="slide" alt="BANgBANgStreaming_Screenshot_2">
+                        <img src="images/BANgBANgStreaming_Screenshot_3.png" class="slide" alt="BANgBANgStreaming_Screenshot_3">
+                        <img src="images/BANgBANgStreaming_Screenshot_4.png" class="slide" alt="BANgBANgStreaming_Screenshot_4">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal-bangbangstreaming')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-bangbangstreaming')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「BANgBANgStreaming」は、アクション2Dタワーディフェンスゲームです。プレイヤーは、ストリーマーとなり、視聴者からのコメントを受け取りながら、ステージを攻略していきます。視聴者のコメントによってゲームの難易度が変化するため、プレイヤーは視聴者とのコミュニケーションを大切にしながらプレイすることが求められます。
+                        </p>
+                        <h4>こだわった点</h4>
+                        <p>ゲーム内のストリーミング機能を実装し、プレイヤーが実際にストリーマーとしてゲームをプレイする体験を提供し
+                            ました。また、視聴者のコメントによってゲームの難易度が変化するシステムを構築し、プレイヤーが視聴者とのコミュニケーションを楽しめるようにしました。</p>
+                    </div>
+                </div>
             </div>
         
         </section>
