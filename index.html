@@ -47,6 +47,8 @@
                         <img src="images/BANgBANgStreaming_Screenshot_2.png" class="slide" alt="BANgBANgStreaming_Screenshot_2">
                         <img src="images/BANgBANgStreaming_Screenshot_3.png" class="slide" alt="BANgBANgStreaming_Screenshot_3">
                         <img src="images/BANgBANgStreaming_Screenshot_4.png" class="slide" alt="BANgBANgStreaming_Screenshot_4">
+                        <img src="imgaes/BANgBANgStreaming_Photo_1.png" class="slide" alt="BANgBANgStreaming_Photo_1">
+                        <img src="images/BANgBANgStreaming_Photo_2.png" class="slide" alt="BANgBANgStreaming_Photo_2">
                     </div>
                     <div class="slider-controls">
                         <button class="prev-btn" onclick="prevSlide('modal-bangbangstreaming')">&#10094;</button>
@@ -54,17 +56,23 @@
                     </div>
                     <div class="modal-description">
                         <h3>ゲームの詳細</h3>
-                        <p>「BANgBANgStreaming」は、アクション2Dタワーディフェンスゲームです。プレイヤーは、ストリーマーとなり、視聴者からのコメントを受け取りながら、ステージを攻略していきます。視聴者のコメントによってゲームの難易度が変化するため、プレイヤーは視聴者とのコミュニケーションを大切にしながらプレイすることが求められます。
+                        <p>「BANgBANgStreaming」は、アクション2Dタワーディフェンスゲームです。プレイヤーは、配信者となり、視聴者からのコメントを受け取りながら、ステージを攻略していきます。視聴者のコメントによって視聴者数が増減し、ゲームの終わりのイラストが変化します。
                         </p>
-                        <h4>こだわった点</h4>
-                        <p>ゲーム内のストリーミング機能を実装し、プレイヤーが実際にストリーマーとしてゲームをプレイする体験を提供し
-                            ました。また、視聴者のコメントによってゲームの難易度が変化するシステムを構築し、プレイヤーが視聴者とのコミュニケーションを楽しめるようにしました。</p>
+                        <h3>こだわった点</h3>
+                        <p>ゲーム内のストリーミング機能を実装し、プレイヤーが実際に配信者としてゲームをプレイする体験を提供しました。自作コントローラーや台パン用の巨大エンターキーなどで操作する設計にし、BitSummit当日では多くのお客様に遊んでいただけました。</p>
+                        <h3>制作背景</h3>
+                        <p>2023年のBitSummitで作成した「猫は液体」は審査員の方からは高評価でしたが、惜しくも賞を取ることはできませんでした。また、チームビルディングもうまくいったとは言い難かったためその点の悔いが残っていました。「BANgBANgStreamin」では去年の経験を活かしてチームビルディングから企画、設計までをきちんと行うようにしました。
+                            当日の展示の良さもあり、最優秀賞を受賞することができました。</p>
+                        <p>プログラミング的にはSOLID原則を遵守する、継承はなるべく使わない、VContainerを使用して疎結合な作りを保つ、単体テストを作成する、関数型のアプローチを部分的に採用するなどのことに挑戦しました。チーム間で認識の齟齬がないようにサポートを全力で行いました。
+                            このように作成していたため、度重なる仕様変更に柔軟に対応できました。
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="project">
                 <h4>Carry Block! (10人開発)</h4>
+                <img src="images/CarryBlock_Title.png" alt="CarryBlock_Title" class="thumbnail-img">
                 <p>期間: 2023年3月〜2023年11月（8ヶ月）</p>
                 <p>制作目的: 3Dオンライン協力ゲームの開発とリーダーシップ経験を積む</p>
                 <p>使用技術: Unity, PhotonFusion</p>
@@ -86,6 +94,19 @@
                     <div class="slider">
                         <img src="images/CarryBlock_Screenshot_1.png" class="slide active" alt="CarryBlock_Screenshot_1">
                         <img src="images/CarryBlock_Screenshot_2.png" class="slide" alt = "CarryBlock_Screenshot_2">
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「Carry Block!」は、オンライン協力アクションゲームです。プレイヤーは、熊を操作し、洞窟からの脱出を目指します。カートの行先を阻むブロックを時間以内に協力して取り除きましょう！
+                        </p>
+                        <h3>こだわった点</h3>
+                        <p>文化祭で出展するゲームとして作成したので、シンプルな操作を心がけました。また、チーム制作として他の方のメンバーの案を取り入れたかったため、ブロックに拡張性を持たせ、多様なステージを作成できることを心がけました。ローカル用専用のゲームとオンライン対応のゲームの二つを作りたかったため、MonoBehaviourになるべくロジックは書かないようにすることを心がけました。</p>
+                        <h3>制作背景</h3>
+                        <p>このゲームは「チーム制作をしたい」「オンラインゲームを作りたい」「開発におけるリーダーをやってみたい」という目標を達成すべく開発を始めました。
+                            チームメンバーそれぞれの目標やレベルが異なるため、タスクを細かく分けてお願いするということを意識しました。また、毎週本「AdaptiveCode」の勉強会を開き、SOLID原則の理解をチーム全体で深めるといったこともしました。
+                            技術的なサポートももちろんですが、Discordで素早く対応したり、柔らかくユーモアのあるチャットで返信したりと、コミュニケーションが活発に行われるような環境づくりも心がけました。
+                            文化祭では親子連れのお客様や友人と一緒に来てくださった学生さんなど、多くの方に楽しんでいただけました。
+                        </p>
                     </div>
                 </div> 
             </div> 
