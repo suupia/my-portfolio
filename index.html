@@ -25,83 +25,175 @@
         <section id="project">
             <h2>Projects</h2>
             <h3>自主制作</h3>
-        
+
             <div class="project">
-                <h4>Mystery Dungeon（個人開発）</h4>
-                <img src="images/MysteriousDungeon_Title.png" alt="MysteryDungeon_Title" class="thumbnail-img">
-                <p>期間: 2021年5月〜7月（2ヶ月）</p>
-                <p>制作目的: 一人でゲーム制作を完成させる経験を積む</p>
-                <p>使用技術: Unity</p>
-                <p>内容: 2Dローグライクダンジョン</p>
-                <p>役割: 企画、プログラム、サウンド、イラスト</p>
-                <p>WebGL: <a href="https://suupia.github.io/MysteryDungeonWebGL/" target="_blank">https://suupia.github.io/MysteryDungeonWebGL/</a></p>
-                <button class="open-modal-btn" onclick="openModal('modal1')">詳細を表示</button>
+                <h4>BANgBANgStreaming（9人開発）BitSummit</h4>
+                <img src="images/BANgBANgStreaming_Title.png" alt="BANgBANgStreaming_Title" class="thumbnail-img">
+                <p>期間: 2024年4月〜7月（5ヶ月）</p>
+                <p>制作目的: 今までの経験を活かしてゲームジャムで賞を取る</p>
+                <p>使用技術: Unity, R3, VContainer</p>
+                <p>内容: アクション2Dタワーディフェンス</p>
+                <p>役割: リードプログラマー、企画、サウンド</p>
+                <p>itch.io: <a href="https://bitsummit-gamejam.itch.io/bangbangstreaming" target="_blank">https://bitsummit-gamejam.itch.io/bangbangstreaming</a></p>
+                <button class="open-modal-btn" onclick="openModal('modal-bangbangstreaming')">詳細を表示</button>
             </div>
-        
-            <!-- Mystery Dungeon モーダル -->
-            <div id="modal1" class="modal">
+
+            <!-- BANgBANgStreaming モーダル -->
+            <div id="modal-bangbangstreaming" class="modal">
                 <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+                    <span class="close-btn" onclick="closeModal('modal-bangbangstreaming')">&times;</span>
                     <div class="slider">
-                        <img src="images/MysteriousDungeon_Screenshot_1.png" class="slide active" alt="スクリーンショット1">
-                        <img src="images/MysteriousDungeon_Screenshot_2.png" class="slide" alt="スクリーンショット2">
-                        <img src="images/MysteriousDungeon_Screenshot_3.png" class="slide" alt="スクリーンショット3">
+                        <img src="images/BANgBANgStreaming_Screenshot_1.png" class="slide active" alt="BANgBANgStreaming_Screenshot_1">
+                        <img src="images/BANgBANgStreaming_Screenshot_2.png" class="slide" alt="BANgBANgStreaming_Screenshot_2">
+                        <img src="images/BANgBANgStreaming_Screenshot_3.png" class="slide" alt="BANgBANgStreaming_Screenshot_3">
+                        <img src="images/BANgBANgStreaming_Screenshot_4.png" class="slide" alt="BANgBANgStreaming_Screenshot_4">
                     </div>
                     <div class="slider-controls">
-                        <button class="prev-btn" onclick="prevSlide('modal1')">&#10094;</button>
-                        <button class="next-btn" onclick="nextSlide('modal1')">&#10095;</button>
+                        <button class="prev-btn" onclick="prevSlide('modal-bangbangstreaming')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-bangbangstreaming')">&#10095;</button>
                     </div>
                     <div class="modal-description">
                         <h3>ゲームの詳細</h3>
-                        <p>ターン制の戦闘システムやアイテム収集、ステージ探索を通じて、ダンジョン探索を楽しめます。ボスフロアも存在するので、どこまで進めるのか挑戦してみてください！</p>
-                        <h3>こだわった点</h3>
-                        <p>マップチップや、SE、BGMなどを自作し、プレイヤーが没入感を持てるようにやさしい世界観を作成しました。また、ステージ生成アルゴリズムにもこだわり、毎回異なるダンジョンを楽しむことができます。</p>
-                        <h3>制作背景</h3>
-                        <p>このゲームは私が初めて作成したゲームです。プログラミング経験は1か月ほどですが、その時点でできることを精一杯詰め込んで作成しました。敵がプレイヤーを見つけるアルゴリズムにBFSを使用しているのですが、当時はプログラミングの知識がなかったため、自分で頑張って実装した記憶があります。</p>
+                        <p>「BANgBANgStreaming」は、アクション2Dタワーディフェンスゲームです。プレイヤーは、ストリーマーとなり、視聴者からのコメントを受け取りながら、ステージを攻略していきます。視聴者のコメントによってゲームの難易度が変化するため、プレイヤーは視聴者とのコミュニケーションを大切にしながらプレイすることが求められます。
+                        </p>
+                        <h4>こだわった点</h4>
+                        <p>ゲーム内のストリーミング機能を実装し、プレイヤーが実際にストリーマーとしてゲームをプレイする体験を提供し
+                            ました。また、視聴者のコメントによってゲームの難易度が変化するシステムを構築し、プレイヤーが視聴者とのコミュニケーションを楽しめるようにしました。</p>
                     </div>
                 </div>
             </div>
-        
+
             <div class="project">
-                <h4>だっかん！モンスターの島（2人開発）</h4>
-                <img src="images/OperationMonsterRetrieval_Title.png" alt="OperationMonsterRetrieval_Title" class="thumbnail-img">
-                <p>期間: 2021年7月〜12月（5ヶ月）</p>
-                <p>制作目的: 自身の作りたいゲームを作りきり、Steamで販売する</p>
-                <p>使用技術: Unity</p>
-                <p>内容: 2Dタワーディフェンス</p>
-                <p>役割: 企画、プログラム、サウンド、イラスト</p>
-                <div class="steamStore u-clearfix u-custom-html u-custom-html-2">
-                    <iframe src="https://store.steampowered.com/widget/2147230/_/" frameborder="0" width="100%" height="190"></iframe>
-                </div>
-                <button class="open-modal-btn" onclick="openModal('modal2')">詳細を表示</button>
+                <h4>Carry Block! (10人開発)</h4>
+                <p>期間: 2023年3月〜2023年11月（8ヶ月）</p>
+                <p>制作目的: 3Dオンライン協力ゲームの開発とリーダーシップ経験を積む</p>
+                <p>使用技術: Unity, PhotonFusion</p>
+                <p>内容: 3Dオンライン協力アクションパズル</p>
+                <p>役割: リーダー、企画、プログラム</p>
+                <p>GitHub:</p>
+                <p>
+                    <a href="https://github.com/suupia/CarryBlock" target="_blank">
+                        <img src="https://opengraph.githubassets.com/22ccf0fc48404367dc37d769eb2a3d386ef7f4e62de5509889c1b42e0b1a3430/suupia/CarryBlock" alt="CarryBlock" style="max-width: 500px; width: 100%;">
+                    </a>
+                </p>
+                <button class="open-modal-btn" onclick="openModal('modal-carry-block')">詳細を表示</button>
             </div>
-        
-            <!-- だっかん！モンスターの島 モーダル -->
-            <div id="modal2" class="modal">
+
+            <!-- Carry Block! モーダル -->
+            <div id="modal-carry-block" class="modal">
                 <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+                    <span class="close-btn" onclick="closeModal('modal-carry-block')">&times;</span>
                     <div class="slider">
-                        <img src="images/OperationMonsterRetrieval_Screenshot_1.png" class="slide active" alt="OperationMonsterRetrieval_Screenshot_1">
-                        <img src="images/OperationMonsterRetrieval_Screenshot_2.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_2">
-                        <img src="images/OperationMonsterRetrieval_Screenshot_3.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_3">
-                        <img src="images/OperationMonsterRetrieval_Screenshot_4.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_4">
+                        <img src="images/CarryBlock_Screenshot_1.png" class="slide active" alt="CarryBlock_Screenshot_1">
+                        <img src="images/CarryBlock_Screenshot_2.png" class="slide" alt = "CarryBlock_Screenshot_2">
+                    </div>
+                </div> 
+            </div> 
+
+            <div class="project">
+                <h4>写真館<<黄泉の前>>（2人開発）Siv3Dゲームジャム</h4>
+                <p>期間: 2023年10月（2週間）</p>
+                <p>制作目的: C++を用いたゲームの制作の経験を積む</p>
+                <p>使用技術: C++, Siv3D</p>
+                <p>内容: 2Dノベルゲーム</p>
+                <p>役割: 企画、プログラム、サウンド</p>
+                <button class="open-modal-btn" onclick="openModal('modal-photo-studio')">詳細を表示</button>
+            </div>
+
+            <!-- 写真館<<黄泉の前>> モーダル -->
+            <div id="modal-photo-studio" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-photo-studio')">&times;</span>
+                    <div class="slider">
+                        <img src="images/PhotoStudio_Screenshot_1.png" class="slide active" alt="PhotoStudio_Screenshot_1">
+                        <img src="images/PhotoStudio_Screenshot_2.png" class="slide" alt="PhotoStudio_Screenshot_2">
+                        <img src="images/PhotoStudio_Screenshot_3.png" class="slide" alt="PhotoStudio_Screenshot_3">
                     </div>
                     <div class="slider-controls">
-                        <button class="prev-btn" onclick="prevSlide('modal2')">&#10094;</button>
-                        <button class="next-btn" onclick="nextSlide('modal2')">&#10095;</button>
+                        <button class="prev-btn" onclick="prevSlide('modal-photo-studio')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-photo-studio')">&#10095;</button>
                     </div>
                     <div class="modal-description">
                         <h3>ゲームの詳細</h3>
-                        <p>「だっかん！モンスターの島」は、タワーディフェンス型の戦略ゲームで、プレイヤーはモンスターの島を舞台に戦術を駆使して攻略を目指します。スピーディなバトルとルートの形によって発動するスキルの戦略性を特徴とし、様々なモンスターを使いこなす楽しさがあります。</p>
-                        <h3>こだわった点</h3>
-                        <p>モンスターのデザインやサウンドは、ゲームの雰囲気を高めるために細部までこだわりました。特にドット絵のアニメーションは一体一体丁寧に書き込み、それぞれのキャラの個性が出るようにしました。ストーリーやキャラごとの小話など世界観も作り込みました。また、ゲームの難易度調整に力を入れ、初心者から上級者まで楽しめるバランスを実現しました。</p>
+                        <p>「写真館<<黄泉の前>>」は、写真館を舞台にしたノベルゲームです。プレイヤーは、死後の世界に近い黄泉の近くにある写真館の店員となり、訪れる客の過去の写真を提示していきます。写真を通して、客の思い出を取り戻し客を現世に返す物語です。</p>
+                        <h4>こだわった点</h4>
+                        <p>ゲーム内のキャラクターや背景、ストーリーなどを丁寧に作成し、プレイヤーがゲームの世界に没入できるようにしました。</p>
                         <h3>制作背景</h3>
-                        <p>他の人と協力して開発する経験を積みたいと考え、同じ大学の学生と2人で作成しました。自分たちの作りたいものをがむしゃらに作るという目標だったので、イラスト、BGM、ストーリー作成など全てのことに全力で取り組みました。Steamリリースまでできたので満足です！</p>
+                        <p>このゲームは、バンダイナムコスタジオ杯 Siv3D ゲームジャム にて作成したゲームです。即席のチームで開発をし、私は主にプログラミングの担当をしました。Siv3DやC++といった慣れない環境での制作でしたが、形にすることができました。</p>
                     </div>
                 </div>
             </div>
-        </section>
-        
+
+            <div class="project">
+                <h4>猫は液体（4人開発、BitSummit）</h4>
+                <img src="images/CatsAreLiquid_Title.png" alt="CatsAreLiquid_Title" class="thumbnail-img">
+                <p>期間: 2023年7月（2週間）</p>
+                <p>制作目的: チーム開発のスキルを向上させる</p>
+                <p>使用技術: Unity</p>
+                <p>内容: 2Dアクションパズル（イライラ棒のようなゲーム）</p>
+                <p>役割: リーダー、企画、プログラム、サウンド</p>
+                <p>itch.io: <a href="https://bitsummit-gamejam.itch.io/nekohaekitai" target="_blank">https://bitsummit-gamejam.itch.io/nekohaekitai</a></p>
+                <button class="open-modal-btn" onclick="openModal('modal-cats-are-liquid')">詳細を表示</button>
+            </div>
+
+            <!-- 猫は液体 モーダル -->
+            <div id="modal-cats-are-liquid" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-cats-are-liquid')">&times;</span>
+                    <div class="slider">
+                        <img src="images/CatsAreLiquid_Screenshot_1.png" class="slide active" alt="CatsAreLiquid_Screenshot_1">
+                        <img src="images/CatsAreLiquid_Screenshot_2.png" class="slide" alt="CatsAreLiquid_Screenshot_2">
+                        <img src="images/CatsAreLiquid_Screenshot_3.png" class="slide" alt="CatsAreLiquid_Screenshot_3">
+                    </div>
+                    <div class="slider-controls">て
+                        <button class="prev-btn" onclick="prevSlide('modal-cats-are-liquid')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-cats-are-liquid')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「猫は液体」は、猫が液体であることをテーマにしたアクションパズルゲームです。プレイヤーはスプーンの上にプルプルした猫を乗せ、さまざまな障害物を乗り越えながらゴールを目指します。様々な猫に癒されながら、全ステージをクリアを目指しましょう！</p>
+                        <h3>こだわった点</h3>
+                        <p>猫のアニメーションやゼリーっぽい質感の表現、SE、BGMにこだわり、シンプルながらも楽しめるパズルゲームを作成しました。また、ステージデザインにも力を入れ、様々なギミックと、その組み合わせにより、多様な体験ができるようにし、ステージを攻略する楽しさを追求しました。</p>
+                        <h3>制作背景</h3>
+                        <p>このゲームは、BitSummitのゲームジャムで作成したゲームです。しかし、初めに企画していたゲームは没になったり、リーダーがいなくなりチームメンバーの数が半分になったりとチャレンジングな出来事が起こりました。私が途中でリーダーとなり、企画を考え直し、2週間で作り切りました。残ってくれたメンバーには厳しいスケジュールの中完成まで一緒に走り切ってくれたことに感謝の気持ちでいっぱいです。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>Doubling Fruit Rain（2人開発、Unity 1 week）</h4>
+                <img src="images/DoublingFruitRain_Title.png" alt="DoublingFruitRain_Title" class="thumbnail-img">
+                <p>期間: 2023年6月（1週間）</p>
+                <p>制作目的: 短期間で完成度の高いゲームを制作するスキルを磨く</p>
+                <p>使用技術: Unity</p>
+                <p>内容: 企画、プログラム、サウンド</p>
+                <p>UnityRoom: <a href="https://unityroom.com/games/doubling-fruit-rain" target="_blank">https://unityroom.com/games/everevergreen</a></p>
+                <button class="open-modal-btn" onclick="openModal('modal-doubling-fruit-rain')">詳細を表示</button>
+            </div>
+
+            <!-- Doubling Fruit Rain モーダル -->
+            <div id="modal-doubling-fruit-rain" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('modal-doubling-fruit-rain')">&times;</span>
+                    <div class="slider">
+                        <img src="images/DoublingFruitRain_Screenshot_1.png" class="slide active" alt="DoublingFruitRain_Screenshot_1">
+                        <img src="images/DoublingFruitRain_Screenshot_2.png" class="slide" alt="DoublingFruitRain_Screenshot_2">
+                        <img src="images/DoublingFruitRain_Screenshot_3.png" class="slide" alt="DoublingFruitRain_Screenshot_3">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal-doubling-fruit-rain')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal-doubling-fruit-rain')">&#10095;</button>
+                    </div>
+                    <div class="modal-description">
+                        <h3>ゲームの詳細</h3>
+                        <p>「Doubling Fruit Rain」は、フルーツを収穫してスコアを稼ぐゲームです。フルーツに「倍々ビーム」を当てると、そのフルーツが2つに分裂して落ちてきます。フルーツを倍々にしてスコアを稼ぎ、ハイスコアを目指してください。腐ったフルーツを倍にしてしまうとマイナスの得点も倍になってしまいます！</p>
+                        <h3>こだわった点</h3>
+                        <p>ゲームの操作性を重視し、直感的で分かりやすい仕様にしました。また、軽く明るいBGMを作成し、さくっと遊べるゲームを目指しました。</p>
+                        <h3>制作背景</h3>
+                        <p>このゲームは私が所属しているゲーム制作サークルに新しく入ってきた新入生と2人で作成しました。ゲーム開発の流れや、考え方を伝授するという目的もあったため、ほとんどの部分を私が担当しました。またUniRxなどの技術に挑戦するという目標もあり、全ての目標を達成することができました。</p>
+                    </div>
+                </div>
+            </div>
 
             <div class="project">
                 <h4>EverEverGreen（2人開発）</h4>
@@ -144,175 +236,88 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="project">
-                <h4>Doubling Fruit Rain（2人開発、Unity 1 week）</h4>
-                <img src="images/DoublingFruitRain_Title.png" alt="DoublingFruitRain_Title" class="thumbnail-img">
-                <p>期間: 2023年6月（1週間）</p>
-                <p>制作目的: 短期間で完成度の高いゲームを制作するスキルを磨く</p>
+                <h4>だっかん！モンスターの島（2人開発）</h4>
+                <img src="images/OperationMonsterRetrieval_Title.png" alt="OperationMonsterRetrieval_Title" class="thumbnail-img">
+                <p>期間: 2021年7月〜12月（5ヶ月）</p>
+                <p>制作目的: 自身の作りたいゲームを作りきり、Steamで販売する</p>
                 <p>使用技術: Unity</p>
-                <p>内容: 企画、プログラム、サウンド</p>
-                <p>UnityRoom: <a href="https://unityroom.com/games/doubling-fruit-rain" target="_blank">https://unityroom.com/games/everevergreen</a></p>
-                <button class="open-modal-btn" onclick="openModal('modal-doubling-fruit-rain')">詳細を表示</button>
+                <p>内容: 2Dタワーディフェンス</p>
+                <p>役割: 企画、プログラム、サウンド、イラスト</p>
+                <div class="steamStore u-clearfix u-custom-html u-custom-html-2">
+                    <iframe src="https://store.steampowered.com/widget/2147230/_/" frameborder="0" width="100%" height="190"></iframe>
+                </div>
+                <button class="open-modal-btn" onclick="openModal('modal2')">詳細を表示</button>
             </div>
-
-            <!-- Doubling Fruit Rain モーダル -->
-            <div id="modal-doubling-fruit-rain" class="modal">
+        
+            <!-- だっかん！モンスターの島 モーダル -->
+            <div id="modal2" class="modal">
                 <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal-doubling-fruit-rain')">&times;</span>
+                    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
                     <div class="slider">
-                        <img src="images/DoublingFruitRain_Screenshot_1.png" class="slide active" alt="DoublingFruitRain_Screenshot_1">
-                        <img src="images/DoublingFruitRain_Screenshot_2.png" class="slide" alt="DoublingFruitRain_Screenshot_2">
-                        <img src="images/DoublingFruitRain_Screenshot_3.png" class="slide" alt="DoublingFruitRain_Screenshot_3">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_1.png" class="slide active" alt="OperationMonsterRetrieval_Screenshot_1">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_2.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_2">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_3.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_3">
+                        <img src="images/OperationMonsterRetrieval_Screenshot_4.png" class="slide" alt="OperationMonsterRetrieval_Screenshot_4">
                     </div>
                     <div class="slider-controls">
-                        <button class="prev-btn" onclick="prevSlide('modal-doubling-fruit-rain')">&#10094;</button>
-                        <button class="next-btn" onclick="nextSlide('modal-doubling-fruit-rain')">&#10095;</button>
+                        <button class="prev-btn" onclick="prevSlide('modal2')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal2')">&#10095;</button>
                     </div>
                     <div class="modal-description">
                         <h3>ゲームの詳細</h3>
-                        <p>「Doubling Fruit Rain」は、フルーツを収穫してスコアを稼ぐゲームです。フルーツに「倍々ビーム」を当てると、そのフルーツが2つに分裂して落ちてきます。フルーツを倍々にしてスコアを稼ぎ、ハイスコアを目指してください。腐ったフルーツを倍にしてしまうとマイナスの得点も倍になってしまいます！</p>
+                        <p>「だっかん！モンスターの島」は、タワーディフェンス型の戦略ゲームで、プレイヤーはモンスターの島を舞台に戦術を駆使して攻略を目指します。スピーディなバトルとルートの形によって発動するスキルの戦略性を特徴とし、様々なモンスターを使いこなす楽しさがあります。</p>
                         <h3>こだわった点</h3>
-                        <p>ゲームの操作性を重視し、直感的で分かりやすい仕様にしました。また、軽く明るいBGMを作成し、さくっと遊べるゲームを目指しました。</p>
+                        <p>モンスターのデザインやサウンドは、ゲームの雰囲気を高めるために細部までこだわりました。特にドット絵のアニメーションは一体一体丁寧に書き込み、それぞれのキャラの個性が出るようにしました。ストーリーやキャラごとの小話など世界観も作り込みました。また、ゲームの難易度調整に力を入れ、初心者から上級者まで楽しめるバランスを実現しました。</p>
                         <h3>制作背景</h3>
-                        <p>このゲームは私が所属しているゲーム制作サークルに新しく入ってきた新入生と2人で作成しました。ゲーム開発の流れや、考え方を伝授するという目的もあったため、ほとんどの部分を私が担当しました。またUniRxなどの技術に挑戦するという目標もあり、全ての目標を達成することができました。</p>
+                        <p>他の人と協力して開発する経験を積みたいと考え、同じ大学の学生と2人で作成しました。自分たちの作りたいものをがむしゃらに作るという目標だったので、イラスト、BGM、ストーリー作成など全てのことに全力で取り組みました。Steamリリースまでできたので満足です！</p>
                     </div>
                 </div>
             </div>
         
             <div class="project">
-                <h4>猫は液体（4人開発、BitSummit）</h4>
-                <img src="images/CatsAreLiquid_Title.png" alt="CatsAreLiquid_Title" class="thumbnail-img">
-                <p>期間: 2023年7月（2週間）</p>
-                <p>制作目的: チーム開発のスキルを向上させる</p>
+                <h4>Mystery Dungeon（個人開発）</h4>
+                <img src="images/MysteriousDungeon_Title.png" alt="MysteryDungeon_Title" class="thumbnail-img">
+                <p>期間: 2021年5月〜7月（2ヶ月）</p>
+                <p>制作目的: 一人でゲーム制作を完成させる経験を積む</p>
                 <p>使用技術: Unity</p>
-                <p>内容: 2Dアクションパズル（イライラ棒のようなゲーム）</p>
-                <p>役割: リーダー、企画、プログラム、サウンド</p>
-                <p>itch.io: <a href="https://bitsummit-gamejam.itch.io/nekohaekitai" target="_blank">https://bitsummit-gamejam.itch.io/nekohaekitai</a></p>
-                <button class="open-modal-btn" onclick="openModal('modal-cats-are-liquid')">詳細を表示</button>
+                <p>内容: 2Dローグライクダンジョン</p>
+                <p>役割: 企画、プログラム、サウンド、イラスト</p>
+                <p>WebGL: <a href="https://suupia.github.io/MysteryDungeonWebGL/" target="_blank">https://suupia.github.io/MysteryDungeonWebGL/</a></p>
+                <button class="open-modal-btn" onclick="openModal('modal1')">詳細を表示</button>
             </div>
-
-            <!-- 猫は液体 モーダル -->
-            <div id="modal-cats-are-liquid" class="modal">
+        
+            <!-- Mystery Dungeon モーダル -->
+            <div id="modal1" class="modal">
                 <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal-cats-are-liquid')">&times;</span>
+                    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
                     <div class="slider">
-                        <img src="images/CatsAreLiquid_Screenshot_1.png" class="slide active" alt="CatsAreLiquid_Screenshot_1">
-                        <img src="images/CatsAreLiquid_Screenshot_2.png" class="slide" alt="CatsAreLiquid_Screenshot_2">
-                        <img src="images/CatsAreLiquid_Screenshot_3.png" class="slide" alt="CatsAreLiquid_Screenshot_3">
+                        <img src="images/MysteriousDungeon_Screenshot_1.png" class="slide active" alt="スクリーンショット1">
+                        <img src="images/MysteriousDungeon_Screenshot_2.png" class="slide" alt="スクリーンショット2">
+                        <img src="images/MysteriousDungeon_Screenshot_3.png" class="slide" alt="スクリーンショット3">
                     </div>
-                    <div class="slider-controls">て
-                        <button class="prev-btn" onclick="prevSlide('modal-cats-are-liquid')">&#10094;</button>
-                        <button class="next-btn" onclick="nextSlide('modal-cats-are-liquid')">&#10095;</button>
+                    <div class="slider-controls">
+                        <button class="prev-btn" onclick="prevSlide('modal1')">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlide('modal1')">&#10095;</button>
                     </div>
                     <div class="modal-description">
                         <h3>ゲームの詳細</h3>
-                        <p>「猫は液体」は、猫が液体であることをテーマにしたアクションパズルゲームです。プレイヤーはスプーンの上にプルプルした猫を乗せ、さまざまな障害物を乗り越えながらゴールを目指します。様々な猫に癒されながら、全ステージをクリアを目指しましょう！</p>
+                        <p>ターン制の戦闘システムやアイテム収集、ステージ探索を通じて、ダンジョン探索を楽しめます。ボスフロアも存在するので、どこまで進めるのか挑戦してみてください！</p>
                         <h3>こだわった点</h3>
-                        <p>猫のアニメーションやゼリーっぽい質感の表現、SE、BGMにこだわり、シンプルながらも楽しめるパズルゲームを作成しました。また、ステージデザインにも力を入れ、様々なギミックと、その組み合わせにより、多様な体験ができるようにし、ステージを攻略する楽しさを追求しました。</p>
+                        <p>マップチップや、SE、BGMなどを自作し、プレイヤーが没入感を持てるようにやさしい世界観を作成しました。また、ステージ生成アルゴリズムにもこだわり、毎回異なるダンジョンを楽しむことができます。</p>
                         <h3>制作背景</h3>
-                        <p>このゲームは、BitSummitのゲームジャムで作成したゲームです。しかし、初めに企画していたゲームは没になったり、リーダーがいなくなりチームメンバーの数が半分になったりとチャレンジングな出来事が起こりました。私が途中でリーダーとなり、企画を考え直し、2週間で作り切りました。残ってくれたメンバーには厳しいスケジュールの中完成まで一緒に走り切ってくれたことに感謝の気持ちでいっぱいです。</p>
+                        <p>このゲームは私が初めて作成したゲームです。プログラミング経験は1か月ほどですが、その時点でできることを精一杯詰め込んで作成しました。敵がプレイヤーを見つけるアルゴリズムにBFSを使用しているのですが、当時はプログラミングの知識がなかったため、自分で頑張って実装した記憶があります。</p>
                     </div>
                 </div>
             </div>
         
-            <div class="project">
-                <h4>写真館<<黄泉の前>>（2人開発）Siv3Dゲームジャム</h4>
-                <p>期間: 2023年10月（2週間）</p>
-                <p>制作目的: C++を用いたゲームの制作の経験を積む</p>
-                <p>使用技術: C++, Siv3D</p>
-                <p>内容: 2Dノベルゲーム</p>
-                <p>役割: 企画、プログラム、サウンド</p>
-                <button class="open-modal-btn" onclick="openModal('modal-photo-studio')">詳細を表示</button>
-            </div>
 
-            <!-- 写真館<<黄泉の前>> モーダル -->
-            <div id="modal-photo-studio" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal-photo-studio')">&times;</span>
-                    <div class="slider">
-                        <img src="images/PhotoStudio_Screenshot_1.png" class="slide active" alt="PhotoStudio_Screenshot_1">
-                        <img src="images/PhotoStudio_Screenshot_2.png" class="slide" alt="PhotoStudio_Screenshot_2">
-                        <img src="images/PhotoStudio_Screenshot_3.png" class="slide" alt="PhotoStudio_Screenshot_3">
-                    </div>
-                    <div class="slider-controls">
-                        <button class="prev-btn" onclick="prevSlide('modal-photo-studio')">&#10094;</button>
-                        <button class="next-btn" onclick="nextSlide('modal-photo-studio')">&#10095;</button>
-                    </div>
-                    <div class="modal-description">
-                        <h3>ゲームの詳細</h3>
-                        <p>「写真館<<黄泉の前>>」は、写真館を舞台にしたノベルゲームです。プレイヤーは、死後の世界に近い黄泉の近くにある写真館の店員となり、訪れる客の過去の写真を提示していきます。写真を通して、客の思い出を取り戻し客を現世に返す物語です。</p>
-                        <h4>こだわった点</h4>
-                        <p>ゲーム内のキャラクターや背景、ストーリーなどを丁寧に作成し、プレイヤーがゲームの世界に没入できるようにしました。</p>
-                        <h3>制作背景</h3>
-                        <p>このゲームは、バンダイナムコスタジオ杯 Siv3D ゲームジャム にて作成したゲームです。即席のチームで開発をし、私は主にプログラミングの担当をしました。Siv3DやC++といった慣れない環境での制作でしたが、形にすることができました。</p>
-                    </div>
-                </div>
-            </div>
+        </section>
         
-            <div class="project">
-                <h4>Carry Block! (10人開発)</h4>
-                <p>期間: 2023年3月〜2023年11月（8ヶ月）</p>
-                <p>制作目的: 3Dオンライン協力ゲームの開発とリーダーシップ経験を積む</p>
-                <p>使用技術: Unity, PhotonFusion</p>
-                <p>内容: 3Dオンライン協力アクションパズル</p>
-                <p>役割: リーダー、企画、プログラム</p>
-                <p>GitHub:</p>
-                <p>
-                    <a href="https://github.com/suupia/CarryBlock" target="_blank">
-                        <img src="https://opengraph.githubassets.com/22ccf0fc48404367dc37d769eb2a3d386ef7f4e62de5509889c1b42e0b1a3430/suupia/CarryBlock" alt="CarryBlock" style="max-width: 500px; width: 100%;">
-                    </a>
-                </p>
-                <button class="open-modal-btn" onclick="openModal('modal-carry-block')">詳細を表示</button>
-            </div>
 
-            <!-- Carry Block! モーダル -->
-            <div id="modal-carry-block" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal-carry-block')">&times;</span>
-                    <div class="slider">
-                        <img src="images/CarryBlock_Screenshot_1.png" class="slide active" alt="CarryBlock_Screenshot_1">
-                        <img src="images/CarryBlock_Screenshot_2.png" class="slide" alt = "CarryBlock_Screenshot_2">
-                    </div>
-                </div> 
-            </div> 
 
-            <div class="project">
-                <h4>BANgBANgStreaming（9人開発）BitSummit</h4>
-                <img src="images/BANgBANgStreaming_Title.png" alt="BANgBANgStreaming_Title" class="thumbnail-img">
-                <p>期間: 2024年4月〜7月（5ヶ月）</p>
-                <p>制作目的: 今までの経験を活かしてゲームジャムで賞を取る</p>
-                <p>使用技術: Unity, R3, VContainer</p>
-                <p>内容: アクション2Dタワーディフェンス</p>
-                <p>役割: リードプログラマー、企画、サウンド</p>
-                <p>itch.io: <a href="https://bitsummit-gamejam.itch.io/bangbangstreaming" target="_blank">https://bitsummit-gamejam.itch.io/bangbangstreaming</a></p>
-                <button class="open-modal-btn" onclick="openModal('modal-bangbangstreaming')">詳細を表示</button>
-            </div>
 
-            <!-- BANgBANgStreaming モーダル -->
-            <div id="modal-bangbangstreaming" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal('modal-bangbangstreaming')">&times;</span>
-                    <div class="slider">
-                        <img src="images/BANgBANgStreaming_Screenshot_1.png" class="slide active" alt="BANgBANgStreaming_Screenshot_1">
-                        <img src="images/BANgBANgStreaming_Screenshot_2.png" class="slide" alt="BANgBANgStreaming_Screenshot_2">
-                        <img src="images/BANgBANgStreaming_Screenshot_3.png" class="slide" alt="BANgBANgStreaming_Screenshot_3">
-                        <img src="images/BANgBANgStreaming_Screenshot_4.png" class="slide" alt="BANgBANgStreaming_Screenshot_4">
-                    </div>
-                    <div class="slider-controls">
-                        <button class="prev-btn" onclick="prevSlide('modal-bangbangstreaming')">&#10094;</button>
-                        <button class="next-btn" onclick="nextSlide('modal-bangbangstreaming')">&#10095;</button>
-                    </div>
-                    <div class="modal-description">
-                        <h3>ゲームの詳細</h3>
-                        <p>「BANgBANgStreaming」は、アクション2Dタワーディフェンスゲームです。プレイヤーは、ストリーマーとなり、視聴者からのコメントを受け取りながら、ステージを攻略していきます。視聴者のコメントによってゲームの難易度が変化するため、プレイヤーは視聴者とのコミュニケーションを大切にしながらプレイすることが求められます。
-                        </p>
-                        <h4>こだわった点</h4>
-                        <p>ゲーム内のストリーミング機能を実装し、プレイヤーが実際にストリーマーとしてゲームをプレイする体験を提供し
-                            ました。また、視聴者のコメントによってゲームの難易度が変化するシステムを構築し、プレイヤーが視聴者とのコミュニケーションを楽しめるようにしました。</p>
-                    </div>
-                </div>
-            </div>
         
         </section>
         
