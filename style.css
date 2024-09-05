@@ -45,6 +45,13 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* プロジェクトタイトルのスタイル */
+.project h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
 a {
     color: #4CAF50;
     text-decoration: none;
@@ -140,4 +147,19 @@ footer {
     max-width: 600px; /* 最大幅 */
     border-radius: 10px; /* 角を少し丸める */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加して浮き上がらせる */
+}
+
+.open-modal-btn {
+    background-color: #4CAF50; /* ボタンの背景色 */
+    color: white; /* テキストの色 */
+    padding: 10px 20px; /* ボタンのパディング */
+    border: none; /* 枠線を消す */
+    border-radius: 5px; /* 角を丸くする */
+    cursor: pointer; /* ポインターが指マークに変わる */
+    font-size: 16px; /* フォントサイズを指定 */
+    transition: background-color 0.3s; /* 背景色の変化をスムーズに */
+}
+
+.open-modal-btn:hover {
+    background-color: #45a049; /* ホバー時の背景色 */
 }
